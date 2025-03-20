@@ -3,6 +3,6 @@ import addMdToPage from './libs/addMdToPage.js';
 import dbQuery from "./libs/dbQuery.js";
 import tableFromData from './libs/tableFromData.js'
 
-let someStudents = await dbQuery('SELECT * FROM results');
+let allStudents = await dbQuery('SELECT * FROM result limit 10');
 
-tableFrom 
+tableFromData({ data: allStudents });
